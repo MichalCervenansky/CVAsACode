@@ -232,6 +232,12 @@ span {
   }
 }
 
+@media (min-width: 2000px) {
+  .container-fluid {
+    padding: 0 30% 10rem 30% !important;
+  }
+}
+
 header .row {
   display: flex;
   align-items: flex-start;
