@@ -226,9 +226,9 @@ span {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container-fluid {
-    padding: 0 30% !important;
+    padding: 0 20% !important;
   }
 }
 
