@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+* {
+  font-family: Raleway;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline: none !important;
+}
+
+html {
+  font-size: 50%;
+}
+
+.container-fluid {
+  padding: 0 10% !important;
+}
+
+ul {
+  list-style: circle;
+}
+
+li::marker {
+  color: black;
+}
+
+p,
+a p,
+li,
+span {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: #666766;
+  word-break: break-all;
+  justify-content: center;
+}
+
+.headLine,
+.middleLine {
+  width: 0.225693rem;
+  background-color: #292929;
+}
+
+.headLine {
+  top: 0;
+  left: 1rem;
+  height: 11.9617rem;
+}
+
+.middleLine {
+  bottom: 3.1597rem;
+  left: 1rem;
+  height: 5.64232rem;
+}
+
+.header {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  direction: ltr;
+  margin-bottom: 3rem;
+}
+
+.firstName,
+.lastName,
+.jobTitle span {
+  text-transform: uppercase;
+  word-break: break-all;
+  direction: ltr;
+  color: #3e3e3e;
+}
+
+.firstName {
+  font-weight: lighter;
+  font-size: 3rem;
+  line-height: 1.68;
+  letter-spacing: 0.7rem;
+  margin-bottom: 1.12846rem;
+}
+
+.lastName {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.09;
+  letter-spacing: 0.9rem;
+  padding-right: 5.64232rem;
+}
+
+.jobTitle {
+  margin-top: 4.51385rem;
+  color: #292929;
+}
+
+.jobTitle span {
+  padding-left: 1rem;
+  letter-spacing: 0.35rem;
+  font-size: 1.5rem;
+  color: #4c4a4a;
+}
+
+.photo {
+  width: 32rem;
+  height: 32rem;
+  object-fit: contain;
+  margin: 0;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: white;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+.list-item {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-right: 1rem;
+  border-bottom: 0.225693rem solid #231f20;
+}
+
+.title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #231f20;
+  padding-top: 0rem;
+  padding-bottom: 3.8rem;
+  color: #222121;
+  letter-spacing: 1.01562rem;
+  margin-bottom: 1.8rem;
+}
+
+.personal-details .title {
+  padding-top: 3rem;
+}
+
+.record p {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1.33;
+  color: #666766;
+  word-break: break-word;
+  display: block;
+}
+
+.btn-group-fab {
+  position: fixed;
+  width: 50px;
+  height: auto;
+  right: 20px;
+  bottom: 20px;
+}
+
+.btn-group-fab div {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.btn-group-fab .btn {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 4px;
+  width: 40px;
+  height: 40px;
+  margin: 4px auto;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0mm;
+  }
+
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .firstName {
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+  }
+
+  .lastName {
+    font-size: 4rem;
+    letter-spacing: 0.9rem;
+  }
+
+  .jobTitle span {
+    font-size: 1.5rem;
+    letter-spacing: 0.35rem;
+  }
+
+  .photo {
+    width: 26rem;
+    height: 26rem;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .middleLine {
+    display: none;
+  }
+
+  .photo-container {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding: 0 30% !important;
+  }
+}
+
+header .row {
+  display: flex;
+  align-items: flex-start;
+}
+
+header .col-md-4 {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+header .photo {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 0;
+}
